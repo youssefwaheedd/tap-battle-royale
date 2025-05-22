@@ -27,7 +27,7 @@ A real-time multiplayer tapping game where players compete to tap the fastest! B
   - Node.js
   - Express
   - Socket.IO
-  - TypeScript
+  - JavaScript
 
 ## Prerequisites
 
