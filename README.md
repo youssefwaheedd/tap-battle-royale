@@ -1,92 +1,116 @@
+# Tap Battle Royale
 
-# Tap Battle Royale - Real-time Multiplayer Button Tapping Game
-
-A real-time multiplayer game where players compete to tap a button as many times as possible within 15 seconds.
-
-## Project info
-
-**URL**: https://lovable.dev/projects/7e3cf0f2-1d6c-4dca-853d-61423151d967
+A real-time multiplayer tapping game where players compete to tap the fastest! Built with React, TypeScript, and Socket.IO.
 
 ## Features
 
-- Real-time multiplayer gameplay using WebSockets (Socket.IO)
-- Synchronized game start across all players
-- Countdown timer before the game begins
-- 15-second gameplay duration
-- Live leaderboard updates
-- End-game results showing all players' performances
+- Real-time multiplayer gameplay
+- Spacebar tapping support
+- Ready-up system for fair game starts
+- Live leaderboard
+- Responsive design
+- Beautiful animations
+- Game countdown timer
+- Auto-reset after game end
 
-## How to Run Locally
+## Tech Stack
 
-### Running the Client
+- **Frontend:**
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+  - React
+  - TypeScript
+  - Tailwind CSS
+  - Framer Motion (animations)
+  - Socket.IO Client
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **Backend:**
+  - Node.js
+  - Express
+  - Socket.IO
+  - TypeScript
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Prerequisites
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+- Node.js (v14 or higher)
+- npm or yarn
+
+## Installation 🚀
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/tap-battle-royale.git
+cd tap-battle-royale
 ```
 
-### Running the WebSocket Server
+2. Install dependencies:
 
-```sh
-# Step 1: Navigate to the server directory
-cd server
-
-# Step 2: Install server dependencies
+```bash
+# Install client dependencies
 npm install
 
-# Step 3: Start the server
+# Install server dependencies
+cd server
+npm install
+```
+
+3. Start the development servers:
+
+In one terminal (server):
+
+```bash
+cd server
 npm run dev
 ```
 
-The game client will run on `http://localhost:8080` and the WebSocket server will run on `http://localhost:3001`.
+In another terminal (client):
+
+```bash
+npm run dev
+```
+
+The game will be available at `http://localhost:8080`
 
 ## How to Play
 
-1. Open the game in your browser
-2. Enter your name and join the game
-3. The first player to join becomes the host and can start the game
-4. When the game starts, a 5-second countdown begins
-5. After the countdown, rapidly tap any key on your keyboard or click/tap the button
-6. Keep tapping until the 15-second time limit is reached
-7. View the results to see who won!
+1. Enter your name to join the game
+2. Wait for another player to join
+3. Click "Ready Up" when you're ready to play
+4. When both players are ready, the game will start automatically
+5. Press the spacebar as fast as you can during the game
+6. The player with the most taps wins!
 
-## Technologies Used
+## Game Rules
 
-- Vite + React + TypeScript for the frontend
-- Socket.IO for real-time WebSocket communication
-- Express for the backend server
-- Tailwind CSS for styling
-- Framer Motion for animations
+- Each game lasts 15 seconds
+- Players must ready up before the game starts
+- The game requires at least 2 players
+- Taps are registered using the spacebar
+- The player with the most taps at the end wins
+- In case of a tie, both players are declared winners
 
-## Deployment
+## Development
 
-For deployment, you'll need to:
+### Project Structure
 
-1. Build the client: `npm run build`
-2. Set up the server to serve the static files from the build directory
-3. Deploy both the client and server to a hosting provider that supports WebSockets
+```
+tap-sprint-battle/
+├── src/                 # Frontend source code
+│   ├── components/     # React components
+│   ├── services/       # Socket service and utilities
+│   └── pages/         # Page components
+├── server/             # Backend source code
+│   └── server.js      # Socket.IO server
+└── public/            # Static assets
+```
 
-## How can I edit this code?
+## License 📝
 
-There are several ways of editing your application.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-**Use Lovable**
+## Acknowledgments
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7e3cf0f2-1d6c-4dca-853d-61423151d967) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Built with [React](https://reactjs.org/)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+- Real-time functionality powered by [Socket.IO](https://socket.io/)
+- Animations by [Framer Motion](https://www.framer.com/motion/)
