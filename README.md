@@ -39,7 +39,7 @@ A real-time multiplayer tapping game where players compete to tap the fastest! B
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/tap-battle-royale.git
+git clone https://github.com/youssedwaheedd/tap-battle-royale.git
 cd tap-battle-royale
 ```
 
