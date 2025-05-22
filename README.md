@@ -104,13 +104,3 @@ tap-sprint-battle/
 └── public/            # Static assets
 ```
 
-## License 📝
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Built with [React](https://reactjs.org/)
-- Styled with [Tailwind CSS](https://tailwindcss.com/)
-- Real-time functionality powered by [Socket.IO](https://socket.io/)
-- Animations by [Framer Motion](https://www.framer.com/motion/)
